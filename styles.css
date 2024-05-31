@@ -1,0 +1,313 @@
+* {
+    font-family: "Roboto", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 2;
+    background-color: #FFFFFF;
+    color: black;
+    height: 10vh;
+    box-shadow: rgba(17, 17, 26, 0.1) 12px 18px 15px;
+}
+
+nav {
+    height: 100%;
+}
+
+nav ul {
+    height: 100%;
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    gap: 10px;
+    display: inline-flex;
+    align-items: center;
+}
+
+nav ul li {}
+
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    /* padding: 10px 20px; */
+}
+
+nav ul li a:hover {
+    /* background-color: #555; */
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    max-height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.exploreheading {
+    background: linear-gradient(60.44deg, #1D2939 16.72%, #475467 50.39%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 700;
+}
+
+.swiper-button-next {
+    right: 20px;
+}
+
+.swiper-button-prev {
+    left: 15px;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+.threetypes {
+    gap: 50px;
+}
+
+.threetypes>span {
+    font-size: 22px;
+    font-weight: 400;
+    color: #ccc;
+    cursor: pointer;
+}
+
+.threetypes>span.active {
+    color: #000;
+    border-bottom: 1px solid;
+}
+
+.typediv {
+    background-color: #475467;
+    border-radius: 10px;
+}
+
+.typediv>div>div {
+    height: 500px;
+}
+
+.typediv>div>div>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: .7;
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+}
+
+.typediv>div>div>img:hover {
+    opacity: 1.5;
+    transform: scale(1.02);
+}
+
+.image-container {
+    position: relative;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.text-overlay {
+    position: absolute;
+    bottom: 0%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.text-overlay>p {
+    font-size: 16px;
+    text-align: start;
+    margin: 0;
+}
+
+.typedivtext {
+    color: #FFFFFF;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+.typedivtext>span {
+    border-bottom: 1px solid #fff;
+}
+
+.rewardtext {
+    width: 900px;
+    font-weight: 500;
+    text-align: center;
+    margin: auto;
+}
+
+.awardsection>div>img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.awardsection>div>img:hover {
+    transform: scale(1.05);
+    outline: 1px solid #ddd;
+    padding: 3px;
+}
+
+.awardsection>div>p {
+    margin-top: 20px;
+    font-weight: 500;
+    text-align: center;
+}
+
+form label {
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+.contact-form>div>label {
+    width: 120px;
+}
+
+.contact-form>div>input,
+.contact-form>div>textarea {
+    padding: 5px;
+    width: 300px;
+    outline: none;
+    border-radius: 10px;
+    border: none;
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: textfield;
+}
+
+.thesuper {
+    position: fixed;
+    bottom: 10%;
+    right: 0;
+    margin: 20px;
+    /* Adjust this value to add some spacing from the edges */
+    z-index: 999;
+    /* Ensure it's above other content */
+}
+
+form button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: transform 0.3s ease-in-out;
+    font-weight: 500;
+}
+
+form button:hover {
+    transform: scale(1.05);
+    outline: 1px solid #ddd;
+}
+
+.nav-link-ltr::before {
+    width: 0%;
+    bottom: 10px;
+}
+
+.nav-link-ltr:hover::before {
+    width: 100%;
+}
+
+.nav-link {
+    font-weight: bold;
+    font-size: 14px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #031D44;
+    padding: 20px 0px;
+    margin: 0px 20px;
+    display: inline-block;
+    position: relative;
+    opacity: 0.75;
+}
+
+.nav-link:hover {
+    opacity: 1;
+}
+
+.nav-link::before {
+    transition: 300ms;
+    height: 5px;
+    content: "";
+    position: absolute;
+    background-color: #031D44;
+}
+
+@media (max-width: 576px) {
+    .typedivtext {
+        margin-top: 20px;
+    }
+
+    .typediv>div>div {
+        height: 200px;
+    }
+
+    .threetypes {
+        gap: 5px;
+    }
+
+    .typediv>div>div>img {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    .rewardtext {
+        width: auto;
+        font-weight: 500;
+        text-align: center;
+        margin: auto;
+    }
+}
