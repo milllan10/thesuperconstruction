@@ -50,3 +50,9 @@ $('.threetypes span').on('click', function() {
           }
       });
   });
+
+
+$('.mobilelinks').hide();
+$('.iconburgur').on('click', function(){
+    $('.mobilelinks').toggle();
+})
