@@ -16,7 +16,28 @@ try {
     
     $mail->isHTML(true);                                  
     $mail->Subject = 'Thankyou For contacting The Super Construction';
-    $mail->Body    = 'This is the Password and Username reset message';
+    $mail->Body    = '<html>
+    <head>
+        <style>
+            *{
+                font-family:Arial, Helvetica, sans-serif;
+                background-color: #f1f3ff;
+            }
+            p{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <p>Hello , '.$_POST["name"].'</p>
+            <p>Thankyou for contacting us.</p>
+            <p>Your message was "' .$_POST["message"]. ' " We appreciate your time and thoughts.</p>
+            <p>We Will Soon contact you on your given number/email</p>
+            <span>Regards<br><a href="https://milllan10.github.io/thesuperconstruction.github.io/">The Super Construction,</a>Team.</span>
+        </div>
+    </body>
+</html>';
     $mail->send();
     echo 'Message has been sent';
 } catch (Exception $e) {
